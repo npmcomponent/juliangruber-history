@@ -4,14 +4,14 @@
  */
 
 try {
-  var Emitter = require('emitter');
+  var Emitter = require('component-emitter');
   if ('function' != typeof Emitter) throw new Error;
 } catch (err) {
   var Emitter = require('events').EventEmitter;
 }
 
 try {
-  var inherit = require('inherit');
+  var inherit = require('component-inherit');
   if ('function' != typeof inherit) throw new Error;
 } catch (err) {
   inherit = require('util').inherits;
